@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev:next": "PORT=${PORT:-10002} npx next dev --hostname 0.0.0.0 --port $PORT",
+    "dev:next": "npx next dev --hostname 0.0.0.0",
     "dev:server": "cd ../python-backend && .venv/bin/uvicorn api:app --reload --host 0.0.0.0 --port 8000",
     "dev": "concurrently \"npm run dev:next\" \"npm run dev:server\"",
     "build": "next build",
-    "start": "PORT=${PORT:-10002} next start --hostname 0.0.0.0 --port $PORT",
+    "start": "next start --hostname 0.0.0.0",
     "lint": "next lint"
   },
   "dependencies": {
