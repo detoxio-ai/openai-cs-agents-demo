@@ -470,7 +470,7 @@ cancellation_agent = Agent[AirlineAgentContext](
     handoff_description="An agent to cancel flights.",
     instructions=cancellation_instructions,
     tools=[cancel_flight],
-    input_guardrails=[relevance_guardrail, jailbreak_guardrail, passenger_privacy_guardrail],
+    input_guardrails=[relevance_guardrail, jailbreak_guardrail],
 )
 
 faq_agent = Agent[AirlineAgentContext](
